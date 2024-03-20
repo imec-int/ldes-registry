@@ -1,3 +1,4 @@
+https://brugge.ldes.geomobility.eu/observations
 https://www.pieter.pm/dcat/sweden/feed.ttl
 https://era.ilabt.imec.be/rinf/ldes
 https://mumo.ilabt.imec.be/ldes/default
