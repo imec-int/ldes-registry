@@ -9,5 +9,7 @@ https://waterkwaliteit-brugge-ldes.kindflower-25e41809.westeurope.azurecontainer
 https://apim-iow-apimanagement.azure-api.net/ldes/device-models-by-time
 https://apim-iow-apimanagement.azure-api.net/ldes/water-quality-observations-by-time
 https://apim-iow-apimanagement.azure-api.net/ldes/devices-by-time
-https://treecg.github.io/Blue-Bike-to-OSLO/root.ttl
 https://lodi.ilabt.imec.be/odala/oslo
+https://graph.irail.be/sncb/connections/feed
+https://marineregions.org/feed.ttl
+http://vocab.nerc.ac.uk/ldes/P01/
