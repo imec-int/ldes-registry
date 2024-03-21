@@ -3,9 +3,8 @@
 layout: home
 
 hero:
-  name: "LDES Registry Dashboard"
-  text: "Registry of known LDESs"
-  tagline: My great project tagline
+  name: "LDES Registry"
+  text: "Registry of known endpoints"
   actions:
     - theme: brand
       text: Dashboard
