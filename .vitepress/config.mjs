@@ -4,6 +4,7 @@ import { defineConfig } from "vitepress";
 export default defineConfig({
   title: "LDES Registry",
   description: "Registry of known LDESs",
+  base: "/ldes-registry/",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
