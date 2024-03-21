@@ -1,6 +1,6 @@
 # About
 
-Endpoints are checked by sending a HEAD request to the server and expecting a successfull request (200). If the request fails, the endpoint is marked as "offline".
+Endpoints are checked by sending a GET request to the server and expecting a successfull request (200). If the request fails, the endpoint is marked as "offline".
 
 ## Add a new endpoint
 
