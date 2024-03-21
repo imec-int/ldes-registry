@@ -28,7 +28,7 @@ export default {
     for (let ix = 0; ix < items.length; ix++) {
       const url = items[ix].url;
       try {
-        const response = await fetch(url, { method: "HEAD" });
+        const response = await fetch(url, { method: "GET" });
         if (response.ok) {
           items[ix].status = "online";
         } else {
