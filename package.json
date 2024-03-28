@@ -5,6 +5,7 @@
     "url": "https://headbright.be"
   },
   "devDependencies": {
+    "ldes-client": "^0.0.9-alpha.4",
     "vitepress": "^1.0.0-rc.45"
   },
   "scripts": {
