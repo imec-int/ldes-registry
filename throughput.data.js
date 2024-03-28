@@ -77,7 +77,7 @@ const replicateStrem = async (url, maxMembers) => {
       durationSec: Number(end - start) / 1e6 / 1000,
     };
   } catch (error) {
-    console.error(error);
+    console.log(error);
     return null;
   }
 };
