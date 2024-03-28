@@ -3,8 +3,10 @@ outline: deep
 ---
 
 <script setup>
-import { data } from './throughput.data.js'
-const endpoints = data.endpoints
+// import { data } from './throughput.data.js'
+// const endpoints = data.endpoints
+// todo: re-enable this once the ldes-client has been updated
+const endpoints = []
 </script>
 
 <div v-for="endpoint of endpoints">
