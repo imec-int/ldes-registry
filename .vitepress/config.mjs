@@ -12,7 +12,17 @@ export default defineConfig({
       { text: "About", link: "/about" },
     ],
 
-    sidebar: [],
+    sidebar: [
+      {
+        text: "Dashboard",
+        link: "/dashboard",
+      },
+      {
+        text: "Benchmarks",
+        collapsed: false,
+        items: [{ text: "Throughput", link: "/throughput" }],
+      },
+    ],
 
     socialLinks: [
       { icon: "github", link: "https://github.com/imec-int/ldes-registry" },

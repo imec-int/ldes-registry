@@ -3,7 +3,7 @@ outline: deep
 ---
 
 <script setup>
-import { data } from './loader.data.js'
+import { data } from './uptime.data.js'
 const endpoints = data.endpoints
 </script>
 
