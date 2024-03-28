@@ -1,3 +1,7 @@
+process.on("unhandledRejection", (reason, promise) => {
+  console.error("Unhandled Rejection at:", promise, "reason:", reason);
+});
+
 const { intoConfig, replicateLDES } = require("ldes-client");
 
 /**
