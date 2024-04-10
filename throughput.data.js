@@ -12,7 +12,7 @@ const { intoConfig, replicateLDES } = require("ldes-client");
  */
 const getEndpointUrls = async () => {
   const response = await fetch(
-    "https://raw.githubusercontent.com/imec-int/ldes-registry/main/urls.txt"
+    "https://raw.githubusercontent.com/imec-int/ldes-registry/main/urls.txt",
   );
 
   // this parsing should be similar to https://github.com/imec-int/ldes-registry/blob/main/loader.data.js#L13C5-L14C40
@@ -36,7 +36,7 @@ const createClient = (url) => {
     }),
     undefined,
     undefined,
-    "none"
+    "none",
   );
   return client;
 };
@@ -48,6 +48,7 @@ const createClient = (url) => {
  * @returns {Promise<Object>} - Returns an object including the `url`, `quads`, `members` and `durationSec`
  */
 const replicateStrem = async (url, maxMembers) => {
+  console.log("Replicating stream from", url);
   try {
     const client = createClient(url);
 
@@ -65,6 +66,7 @@ const replicateStrem = async (url, maxMembers) => {
       }
 
       if (el.done || (maxMembers && members >= maxMembers)) {
+        await reader.cancel();
         break;
       }
 
@@ -106,7 +108,7 @@ export default {
     for (let ix = 0; ix < items.length; ix++) {
       const url = items[ix].url;
       try {
-        const result = await replicateStrem(url, 30);
+        const result = await replicateStrem(url, 15);
         if (!result) {
           items[ix].status = "offline";
           items[ix].error = "Failed to replicate stream.";
@@ -117,10 +119,10 @@ export default {
           ...item,
           ...result,
           throughputQuands: Number(
-            (result.quads / result.durationSec).toFixed(1)
+            (result.quads / result.durationSec).toFixed(1),
           ),
           throughputMembers: Number(
-            (result.members / result.durationSec).toFixed(1)
+            (result.members / result.durationSec).toFixed(1),
           ),
           status: "online",
         };
