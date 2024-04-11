@@ -58,7 +58,6 @@ const replicateStrem = async (url, maxMembers) => {
     let members = 0;
     while (el) {
       if (el.value) {
-        console.log("found member");
         quads += el.value.quads.length;
         members += 1;
       }
