@@ -34,9 +34,6 @@ const createClient = (url) => {
       url,
       onlyDefaultGraph: true,
     }),
-    undefined,
-    undefined,
-    "none",
   );
   return client;
 };
@@ -61,6 +58,7 @@ const replicateStrem = async (url, maxMembers) => {
     let members = 0;
     while (el) {
       if (el.value) {
+        console.log("found member");
         quads += el.value.quads.length;
         members += 1;
       }
@@ -108,7 +106,7 @@ export default {
     for (let ix = 0; ix < items.length; ix++) {
       const url = items[ix].url;
       try {
-        const result = await replicateStrem(url, 15);
+        const result = await replicateStrem(url, 30);
         if (!result) {
           items[ix].status = "offline";
           items[ix].error = "Failed to replicate stream.";
