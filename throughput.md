@@ -3,8 +3,9 @@ outline: deep
 ---
 
 <script setup>
-import { data } from './throughput.data.js'
-const endpoints = data.endpoints
+// import { data } from './throughput.data.js'
+// const endpoints = data.endpoints
+const endpoints = []
 </script>
 
 <div v-for="endpoint of endpoints">
