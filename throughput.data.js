@@ -1,7 +1,3 @@
-process.on("unhandledRejection", (reason, promise) => {
-  console.error("Unhandled Rejection at:", promise, "reason:", reason);
-});
-
 const { intoConfig, replicateLDES } = require("ldes-client");
 
 /**
@@ -12,7 +8,7 @@ const { intoConfig, replicateLDES } = require("ldes-client");
  */
 const getEndpointUrls = async () => {
   const response = await fetch(
-    "https://raw.githubusercontent.com/imec-int/ldes-registry/main/urls.txt",
+    "https://raw.githubusercontent.com/imec-int/ldes-registry/main/urls.txt"
   );
 
   // this parsing should be similar to https://github.com/imec-int/ldes-registry/blob/main/loader.data.js#L13C5-L14C40
@@ -33,13 +29,14 @@ const createClient = (url) => {
     intoConfig({
       url,
       onlyDefaultGraph: true,
-    }),
+    })
   );
   return client;
 };
 
 /**
  * Measures the time needed to replicate a stream of data from a given URL.
+ * The login for obtaining members is based on https://github.com/pietercolpaert/ldes-benchmark/tree/main/throughput
  * @param {string} url - The LDES endpoint to replicate
  * @param {number} maxMembers - Optionally, the maximum number of members to replicate.
  * @returns {Promise<Object>} - Returns an object including the `url`, `quads`, `members` and `durationSec`
@@ -116,10 +113,10 @@ export default {
           ...item,
           ...result,
           throughputQuands: Number(
-            (result.quads / result.durationSec).toFixed(1),
+            (result.quads / result.durationSec).toFixed(1)
           ),
           throughputMembers: Number(
-            (result.members / result.durationSec).toFixed(1),
+            (result.members / result.durationSec).toFixed(1)
           ),
           status: "online",
         };
