@@ -1,0 +1,12 @@
+[
+  {
+    "url": "https://brugge-ldes.geomobility.eu/observations",
+    "status": "online",
+    "error": null,
+    "quads": 570,
+    "members": 30,
+    "durationSec": 3.144484125,
+    "throughputQuands": 181.3,
+    "throughputMembers": 9.5
+  }
+]
