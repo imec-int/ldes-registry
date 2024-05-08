@@ -66,10 +66,8 @@ const retrieveMermaidPreviewLink = async (url) => {
           const mermaidMarkup = info.extractor.shapesGraph.toMermaid(
             info.shape
           );
-          console.log("mermaidMarkup:", mermaidMarkup);
           const state = convertMermaidToState(mermaidMarkup);
           mermaidUrl = `https://mermaid.live/view#pako:${state}`;
-          console.log("mermaid:", mermaidUrl);
         } catch (ex) {
           console.log("Failed to extract mermaid");
         }
