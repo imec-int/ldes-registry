@@ -23,6 +23,6 @@ for (let ix = 0; ix < endpoints.length; ix++) {
         <a :href="endpoint.url" target="_blank">{{ endpoint.url }}</a>
         <p><span>{{ endpoint.status === "offline" ? "⭕" : "✅" }}</span> {{ endpoint.status }}</p>
         <p v-if="endpoint.error">{{ endpoint.error }}</p>
-        <a v-if="endpoint.metadata" :href="endpoint.metadata.mermaidUrl" target="_blank">🧜‍♀️ Collection Shape </a>
+        <a v-if="endpoint.metadata" :href="endpoint.metadata.mermaidUrl" target="_blank">🧜‍♀️ Shape topology </a>
     </article>
 </div>
