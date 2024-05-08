@@ -5,12 +5,16 @@
     "url": "https://headbright.be"
   },
   "devDependencies": {
-    "ldes-client": "^0.0.9-alpha.4",
+    "ldes-client": "^0.0.9-pr.33.1",
     "vitepress": "^1.0.0-rc.45"
   },
   "scripts": {
     "docs:dev": "vitepress dev",
     "docs:build": "vitepress build",
     "docs:preview": "vitepress preview"
+  },
+  "dependencies": {
+    "js-base64": "^3.7.7",
+    "pako": "^2.1.0"
   }
 }
