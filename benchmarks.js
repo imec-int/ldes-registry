@@ -30,7 +30,7 @@ function gitCommitAndPush(message) {
 
 async function run() {
   await throughput.run();
-  gitCommitAndPush("Update benchmarks");
+  // gitCommitAndPush("Update benchmarks");
 }
 
 console.info("Starting benchmarking...");

@@ -4,7 +4,7 @@ Endpoints are provided a static list of URLs in the `urls.txt` file. To have a n
 
 ## Running benchmarks
 
-Benchmarks like throughput are designed to be executed separately. To do so, use your favourite runner. For example, to run the throughput benchmark using [Bun](https://bun.sh):
+Benchmarks are designed to be executed separately. To do so, use your favourite runner. For example, to run the throughput benchmark using [Bun](https://bun.sh):
 
 ```bash
 bun benchmarks.js
