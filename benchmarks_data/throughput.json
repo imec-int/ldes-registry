@@ -5,8 +5,148 @@
     "error": null,
     "quads": 570,
     "members": 30,
-    "durationSec": 3.144484125,
-    "throughputQuands": 181.3,
-    "throughputMembers": 9.5
+    "durationSec": 3.766715193,
+    "throughputQuands": 151.3,
+    "throughputMembers": 8
+  },
+  {
+    "url": "https://www.pieter.pm/dcat/sweden/feed.ttl",
+    "status": "online",
+    "error": null,
+    "quads": 1105,
+    "members": 30,
+    "durationSec": 2.608656769,
+    "throughputQuands": 423.6,
+    "throughputMembers": 11.5
+  },
+  {
+    "url": "https://era.ilabt.imec.be/rinf/ldes",
+    "status": "online",
+    "error": null,
+    "quads": 210,
+    "members": 30,
+    "durationSec": 23.473012289,
+    "throughputQuands": 8.9,
+    "throughputMembers": 1.3
+  },
+  {
+    "url": "https://mumo.ilabt.imec.be/ldes/default",
+    "status": "online",
+    "error": null,
+    "quads": 0,
+    "members": 0,
+    "durationSec": 0.743551969,
+    "throughputQuands": 0,
+    "throughputMembers": 0
+  },
+  {
+    "url": "https://telraam-api.net/ldes/observations/by-page",
+    "status": "online",
+    "error": null,
+    "quads": 536,
+    "members": 30,
+    "durationSec": 2.147365487,
+    "throughputQuands": 249.6,
+    "throughputMembers": 14
+  },
+  {
+    "url": "https://treecg.github.io/Blue-Bike-to-OSLO/root.ttl",
+    "status": "offline",
+    "error": "Failed to replicate stream.",
+    "quads": 0,
+    "members": 0,
+    "durationSec": 0,
+    "throughputQuands": 0,
+    "throughputMembers": 0
+  },
+  {
+    "url": "https://private-api.gipod.vlaanderen.be/api/v1/ldes/mobility-hindrances",
+    "status": "online",
+    "error": null,
+    "quads": 720,
+    "members": 30,
+    "durationSec": 10.536286017,
+    "throughputQuands": 68.3,
+    "throughputMembers": 2.8
+  },
+  {
+    "url": "https://waterkwaliteit-brugge-ldes.kindflower-25e41809.westeurope.azurecontainerapps.io/Waterkwaliteit",
+    "status": "online",
+    "error": null,
+    "quads": 584,
+    "members": 30,
+    "durationSec": 4.790306712,
+    "throughputQuands": 121.9,
+    "throughputMembers": 6.3
+  },
+  {
+    "url": "https://apim-iow-apimanagement.azure-api.net/ldes/device-models-by-time",
+    "status": "online",
+    "error": null,
+    "quads": 131,
+    "members": 7,
+    "durationSec": 1.0873531989999998,
+    "throughputQuands": 120.5,
+    "throughputMembers": 6.4
+  },
+  {
+    "url": "https://apim-iow-apimanagement.azure-api.net/ldes/water-quality-observations-by-time",
+    "status": "online",
+    "error": null,
+    "quads": 390,
+    "members": 30,
+    "durationSec": 0.816857549,
+    "throughputQuands": 477.4,
+    "throughputMembers": 36.7
+  },
+  {
+    "url": "https://apim-iow-apimanagement.azure-api.net/ldes/devices-by-time",
+    "status": "online",
+    "error": null,
+    "quads": 383,
+    "members": 30,
+    "durationSec": 1.166774049,
+    "throughputQuands": 328.3,
+    "throughputMembers": 25.7
+  },
+  {
+    "url": "https://lodi.ilabt.imec.be/odala/oslo",
+    "status": "offline",
+    "error": "Failed to replicate stream.",
+    "quads": 0,
+    "members": 0,
+    "durationSec": 0,
+    "throughputQuands": 0,
+    "throughputMembers": 0
+  },
+  {
+    "url": "https://graph.irail.be/sncb/connections/feed",
+    "status": "online",
+    "error": null,
+    "quads": 420,
+    "members": 30,
+    "durationSec": 1.519318695,
+    "throughputQuands": 276.4,
+    "throughputMembers": 19.7
+  },
+  {
+    "url": "https://marineregions.org/feed.ttl",
+    "status": "offline",
+    "error": "Failed to replicate stream.",
+    "quads": 0,
+    "members": 0,
+    "durationSec": 0,
+    "throughputQuands": 0,
+    "throughputMembers": 0
+  },
+  {
+    "url": "http://vocab.nerc.ac.uk/ldes/P01/",
+    "status": "online",
+    "error": null,
+    "quads": 693,
+    "members": 30,
+    "durationSec": 9.551962137,
+    "throughputQuands": 72.6,
+    "throughputMembers": 3.1
   }
 ]
