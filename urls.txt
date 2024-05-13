@@ -3,13 +3,10 @@ https://www.pieter.pm/dcat/sweden/feed.ttl
 https://era.ilabt.imec.be/rinf/ldes
 https://mumo.ilabt.imec.be/ldes/default
 https://telraam-api.net/ldes/observations/by-page
-https://treecg.github.io/Blue-Bike-to-OSLO/root.ttl
 https://private-api.gipod.vlaanderen.be/api/v1/ldes/mobility-hindrances
 https://waterkwaliteit-brugge-ldes.kindflower-25e41809.westeurope.azurecontainerapps.io/Waterkwaliteit
 https://apim-iow-apimanagement.azure-api.net/ldes/device-models-by-time
 https://apim-iow-apimanagement.azure-api.net/ldes/water-quality-observations-by-time
 https://apim-iow-apimanagement.azure-api.net/ldes/devices-by-time
-https://lodi.ilabt.imec.be/odala/oslo
 https://graph.irail.be/sncb/connections/feed
 https://marineregions.org/feed.ttl
-http://vocab.nerc.ac.uk/ldes/P01/
