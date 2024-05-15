@@ -31,7 +31,7 @@ for (let ix = 0; ix < endpoints.length; ix++) {
     <article :class="{'custom-block': true, 'danger': endpoint.status === 'offline', 'info': endpoint.status !== 'offline'}">
         <h2 style="margin-top: 0; border-top: 0;">{{ endpoint.title }}</h2>
         <h3>Info</h3>
-        <p><span>{{ endpoint.status === "offline" ? "⭕" : "✅" }}</span> {{ endpoint.status }}</p>
+        <p><span>{{ endpoint.status === "offline" ? "⭕" : "✅" }}</span> Status {{ endpoint.status }}</p>
         <p><span>🔗</span> <a :href="endpoint.url" target="_blank">{{ endpoint.url }}</a></p>
         <p v-if="endpoint.error">{{ endpoint.error }}</p>
         <p v-if="endpoint.metadata"><span>🧜‍♀️</span> <a :href="endpoint.metadata.mermaidUrl" target="_blank">Shape topology </a></p>
