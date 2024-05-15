@@ -134,7 +134,9 @@ export default {
         // wakeup the endpoint
         const response = await fetch(url, { method: "GET" });
         if (response.ok) {
-          // benchmark the stream for 10 seconds, ignore number of members
+          // benchmark the stream for 10 seconds, to give servers the chance to cache the results
+          await replicateStrem(url, 0, 10);
+          // benchmark the stream for 10 seconds to get the actual results
           const result = await replicateStrem(url, 0, 10);
           if (!result) {
             items[ix].status = "offline";
