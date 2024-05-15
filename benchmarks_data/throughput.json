@@ -1,36 +1,86 @@
 [
   {
     "url": "https://brugge-ldes.geomobility.eu/observations",
-    "status": "unknown",
+    "status": "online",
     "error": null,
-    "quads": 0,
-    "members": 0,
-    "durationSec": 0,
-    "throughputQuands": 0,
-    "throughputMembers": 0
+    "quads": 114304,
+    "members": 6016,
+    "durationSec": 10.133172341,
+    "throughputQuands": 11280.2,
+    "throughputMembers": 593.7
   },
   {
     "url": "https://www.pieter.pm/dcat/sweden/feed.ttl",
-    "status": "unknown",
+    "status": "online",
     "error": null,
-    "quads": 0,
-    "members": 0,
-    "durationSec": 0,
-    "throughputQuands": 0,
-    "throughputMembers": 0
+    "quads": 244124,
+    "members": 16232,
+    "durationSec": 10.75343093,
+    "throughputQuands": 22702,
+    "throughputMembers": 1509.5
   },
   {
     "url": "https://era.ilabt.imec.be/rinf/ldes",
-    "status": "unknown",
+    "status": "online",
+    "error": null,
+    "quads": 179342,
+    "members": 8560,
+    "durationSec": 11.050036004999999,
+    "throughputQuands": 16230,
+    "throughputMembers": 774.7
+  },
+  {
+    "url": "https://mumo.ilabt.imec.be/ldes/default",
+    "status": "online",
     "error": null,
     "quads": 0,
     "members": 0,
-    "durationSec": 0,
+    "durationSec": 0.422858983,
     "throughputQuands": 0,
     "throughputMembers": 0
   },
   {
-    "url": "https://mumo.ilabt.imec.be/ldes/default",
+    "url": "https://telraam-api.net/ldes/observations/by-page",
+    "status": "online",
+    "error": null,
+    "quads": 115771,
+    "members": 6501,
+    "durationSec": 10.100288914999998,
+    "throughputQuands": 11462.1,
+    "throughputMembers": 643.6
+  },
+  {
+    "url": "https://private-api.gipod.vlaanderen.be/api/v1/ldes/mobility-hindrances",
+    "status": "online",
+    "error": null,
+    "quads": 24,
+    "members": 1,
+    "durationSec": 12.877953121000001,
+    "throughputQuands": 1.9,
+    "throughputMembers": 0.1
+  },
+  {
+    "url": "https://waterkwaliteit-brugge-ldes.kindflower-25e41809.westeurope.azurecontainerapps.io/Waterkwaliteit",
+    "status": "online",
+    "error": null,
+    "quads": 20231,
+    "members": 1101,
+    "durationSec": 10.118801982,
+    "throughputQuands": 1999.3,
+    "throughputMembers": 108.8
+  },
+  {
+    "url": "https://apim-iow-apimanagement.azure-api.net/ldes/device-models-by-time",
+    "status": "online",
+    "error": null,
+    "quads": 143,
+    "members": 7,
+    "durationSec": 0.047840110000000005,
+    "throughputQuands": 2989.1,
+    "throughputMembers": 146.3
+  },
+  {
+    "url": "https://apim-iow-apimanagement.azure-api.net/ldes/water-quality-observations-by-time",
     "status": "offline",
     "error": "Failed to replicate stream.",
     "quads": 0,
@@ -40,59 +90,9 @@
     "throughputMembers": 0
   },
   {
-    "url": "https://telraam-api.net/ldes/observations/by-page",
-    "status": "unknown",
-    "error": null,
-    "quads": 0,
-    "members": 0,
-    "durationSec": 0,
-    "throughputQuands": 0,
-    "throughputMembers": 0
-  },
-  {
-    "url": "https://private-api.gipod.vlaanderen.be/api/v1/ldes/mobility-hindrances",
-    "status": "unknown",
-    "error": null,
-    "quads": 0,
-    "members": 0,
-    "durationSec": 0,
-    "throughputQuands": 0,
-    "throughputMembers": 0
-  },
-  {
-    "url": "https://waterkwaliteit-brugge-ldes.kindflower-25e41809.westeurope.azurecontainerapps.io/Waterkwaliteit",
-    "status": "unknown",
-    "error": null,
-    "quads": 0,
-    "members": 0,
-    "durationSec": 0,
-    "throughputQuands": 0,
-    "throughputMembers": 0
-  },
-  {
-    "url": "https://apim-iow-apimanagement.azure-api.net/ldes/device-models-by-time",
-    "status": "unknown",
-    "error": null,
-    "quads": 0,
-    "members": 0,
-    "durationSec": 0,
-    "throughputQuands": 0,
-    "throughputMembers": 0
-  },
-  {
-    "url": "https://apim-iow-apimanagement.azure-api.net/ldes/water-quality-observations-by-time",
-    "status": "unknown",
-    "error": null,
-    "quads": 0,
-    "members": 0,
-    "durationSec": 0,
-    "throughputQuands": 0,
-    "throughputMembers": 0
-  },
-  {
     "url": "https://apim-iow-apimanagement.azure-api.net/ldes/devices-by-time",
-    "status": "unknown",
-    "error": null,
+    "status": "offline",
+    "error": "429 Too Many Requests",
     "quads": 0,
     "members": 0,
     "durationSec": 0,
@@ -101,18 +101,18 @@
   },
   {
     "url": "https://graph.irail.be/sncb/connections/feed",
-    "status": "unknown",
+    "status": "online",
     "error": null,
-    "quads": 0,
-    "members": 0,
-    "durationSec": 0,
-    "throughputQuands": 0,
-    "throughputMembers": 0
+    "quads": 9814,
+    "members": 701,
+    "durationSec": 13.542291438,
+    "throughputQuands": 724.7,
+    "throughputMembers": 51.8
   },
   {
     "url": "https://marineregions.org/feed.ttl",
-    "status": "unknown",
-    "error": null,
+    "status": "offline",
+    "error": "Failed to replicate stream.",
     "quads": 0,
     "members": 0,
     "durationSec": 0,
