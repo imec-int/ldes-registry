@@ -40,10 +40,11 @@ const createClient = (url) => {
  * Measures the time needed to replicate a stream of data from a given URL.
  * The login for obtaining members is based on https://github.com/pietercolpaert/ldes-benchmark/tree/main/throughput
  * @param {string} url - The LDES endpoint to replicate
- * @param {number} maxMembers - Optionally, the maximum number of members to replicate.
+ * @param {number} maxMembers - The maximum number of members to replicate, set to 0 to replicate all members.
+ * @param {number} maxDurationSeconds - Optionally, the maximum amount of time in seconds to consume members from the stream.
  * @returns {Promise<Object>} - Returns an object including the `url`, `quads`, `members` and `durationSec`
  */
-const replicateStrem = async (url, maxMembers) => {
+const replicateStrem = async (url, maxMembers, maxDurationSeconds) => {
   console.log("Replicating stream from", url);
   try {
     const client = createClient(url);
@@ -61,7 +62,18 @@ const replicateStrem = async (url, maxMembers) => {
         members += 1;
       }
 
+      // abort if we've reached the end of the stream or the maximum number of members
       if (el.done || (maxMembers && members >= maxMembers)) {
+        await reader.cancel();
+        break;
+      }
+
+      // abort if we've reached the maximum duration
+      if (
+        maxDurationSeconds &&
+        Number(process.hrtime.bigint() - start) / 1e6 / 1000 >
+          maxDurationSeconds
+      ) {
         await reader.cancel();
         break;
       }
@@ -117,24 +129,32 @@ export default {
     for (let ix = 0; ix < items.length; ix++) {
       const url = items[ix].url;
       try {
-        const result = await replicateStrem(url, 30);
-        if (!result) {
+        // wakeup the endpoint
+        const response = await fetch(url, { method: "GET" });
+        if (response.ok) {
+          // benchmark the stream
+          const result = await replicateStrem(url, 0, 10);
+          if (!result) {
+            items[ix].status = "offline";
+            items[ix].error = "Failed to replicate stream.";
+            continue;
+          }
+          const item = items[ix];
+          items[ix] = {
+            ...item,
+            ...result,
+            throughputQuands: Number(
+              (result.quads / result.durationSec).toFixed(1)
+            ),
+            throughputMembers: Number(
+              (result.members / result.durationSec).toFixed(1)
+            ),
+            status: "online",
+          };
+        } else {
           items[ix].status = "offline";
-          items[ix].error = "Failed to replicate stream.";
-          continue;
+          items[ix].error = `${response.status} ${response.statusText}`;
         }
-        const item = items[ix];
-        items[ix] = {
-          ...item,
-          ...result,
-          throughputQuands: Number(
-            (result.quads / result.durationSec).toFixed(1)
-          ),
-          throughputMembers: Number(
-            (result.members / result.durationSec).toFixed(1)
-          ),
-          status: "online",
-        };
       } catch (error) {
         items[ix].status = "offline";
         items[ix].error = `${error.cause} ${error.message}`;
