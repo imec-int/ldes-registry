@@ -64,6 +64,7 @@ const replicateStrem = async (url, maxMembers, maxDurationSeconds) => {
 
       // abort if we've reached the end of the stream or the maximum number of members
       if (el.done || (maxMembers && members >= maxMembers)) {
+        console.info("reached end of stream or maximum number of members");
         await reader.cancel();
         break;
       }
@@ -74,6 +75,7 @@ const replicateStrem = async (url, maxMembers, maxDurationSeconds) => {
         Number(process.hrtime.bigint() - start) / 1e6 / 1000 >
           maxDurationSeconds
       ) {
+        console.info("reached end of stream or maximum duration");
         await reader.cancel();
         break;
       }
