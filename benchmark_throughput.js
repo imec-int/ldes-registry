@@ -75,7 +75,7 @@ const replicateStrem = async (url, maxMembers, maxDurationSeconds) => {
         Number(process.hrtime.bigint() - start) / 1e6 / 1000 >
           maxDurationSeconds
       ) {
-        console.info("reached end of stream or maximum duration");
+        console.info("reached maximum duration");
         await reader.cancel();
         break;
       }
