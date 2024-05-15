@@ -1,10 +1,16 @@
 # About
 
-Endpoints are checked by sending a GET request to the server and expecting a successfull request (200). If the request fails, the endpoint is marked as "offline".
+Endpoint availability is checked by making a GET request to the server and expecting a successfull request (200). If the request fails, the endpoint is marked as "offline".
 
-## Add a new endpoint
+Throughput is measured by replaying a stream of LDES data and measuring the time it takes to process the stream. For each endpoint, we replicate as many members as possible within 10 seconds. The throughput is calculated as the number of quads or members processed per second.
 
-Add known LDES endpoints to `urls.txt`, one per line with the correct protocol (e.g. https://).
+## Adding a new endpoint
+
+Add known LDES endpoints to `urls.txt`, one per line with the correct protocol (e.g. https://). On each line, provide the endpoint url followed by the title (description of the endpoint) separated by a comma e.g.
+
+```
+https://example.com/endpoint1,Endpoint 1
+```
 
 ## Resources
 
