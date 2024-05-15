@@ -1,12 +1,11 @@
-https://brugge-ldes.geomobility.eu/observations
-https://www.pieter.pm/dcat/sweden/feed.ttl
-https://era.ilabt.imec.be/rinf/ldes
-https://mumo.ilabt.imec.be/ldes/default
-https://telraam-api.net/ldes/observations/by-page
-https://private-api.gipod.vlaanderen.be/api/v1/ldes/mobility-hindrances
-https://waterkwaliteit-brugge-ldes.kindflower-25e41809.westeurope.azurecontainerapps.io/Waterkwaliteit
-https://apim-iow-apimanagement.azure-api.net/ldes/device-models-by-time
-https://apim-iow-apimanagement.azure-api.net/ldes/water-quality-observations-by-time
-https://apim-iow-apimanagement.azure-api.net/ldes/devices-by-time
-https://graph.irail.be/sncb/connections/feed
-https://marineregions.org/feed.ttl
+https://brugge-ldes.geomobility.eu/observations,"Geomobility LDES for traffic counts in Bruges"
+https://www.pieter.pm/dcat/sweden/feed.ttl,"A feed for the national data catalog of Sweden"
+https://era.ilabt.imec.be/rinf/ldes,"The European railway infrastructure registry"
+https://telraam-api.net/ldes/observations/by-page,"Traffic Counts from the We Count project"
+https://private-api.gipod.vlaanderen.be/api/v1/ldes/mobility-hindrances,"Mobility Hindrances in Flanders"
+https://waterkwaliteit-brugge-ldes.kindflower-25e41809.westeurope.azurecontainerapps.io/Waterkwaliteit,"Water Quality in Bruges"
+https://apim-iow-apimanagement.azure-api.net/ldes/device-models-by-time,"Internet of Water device models"
+https://apim-iow-apimanagement.azure-api.net/ldes/water-quality-observations-by-time,"Internet of Water quality observations"
+https://apim-iow-apimanagement.azure-api.net/ldes/devices-by-time,"Internet of Water devices"
+https://graph.irail.be/sncb/connections/feed,"Train delays in Belgium"
+https://marineregions.org/feed.ttl,"The Marine Regions Gazetteer"
