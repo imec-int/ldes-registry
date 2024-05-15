@@ -1,22 +1,14 @@
-/// URL to a file containing a list of LDES endpoints, one per line
-const listUrl =
-  "https://raw.githubusercontent.com/imec-int/ldes-registry/main/urls.txt";
+// @ts-check
+
+import { getEndpointUrls } from "./urlSource";
 
 export default {
   async load() {
-    // load the list of URLs as a string
-    const listResponse = await fetch(listUrl);
-    const listStr = await listResponse.text();
-
-    // split the string into an array of URLs
-    // remove duplicates
-    const allUrls = listStr.split("\n").filter((url) => url.length > 0);
-    const urls = [...new Set(allUrls)];
-
-    // create objects with information we need for the dashboard
-    const items = urls.map((url) => {
+    const endpoints = await getEndpointUrls();
+    const items = endpoints.map((endpoint) => {
       return {
-        url,
+        url: endpoint.url,
+        title: endpoint.title,
         status: "unknown",
         error: null,
       };

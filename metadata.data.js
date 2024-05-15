@@ -1,25 +1,7 @@
 const { intoConfig, replicateLDES } = require("ldes-client");
 import { deflate, inflate } from "pako";
 import { toUint8Array, fromUint8Array, toBase64, fromBase64 } from "js-base64";
-
-/**
- *
- * Downloads the list of LDES streams to be tested from
- * https://raw.githubusercontent.com/imec-int/ldes-registry/main/urls.txt
- * @returns {Promise<string[]>} A promise that resolves to a deduplicated array of endpoint URLs.
- */
-const getEndpointUrls = async () => {
-  const response = await fetch(
-    "https://raw.githubusercontent.com/imec-int/ldes-registry/main/urls.txt"
-  );
-
-  // this parsing should be similar to https://github.com/imec-int/ldes-registry/blob/main/loader.data.js#L13C5-L14C40
-  const data = await response.text();
-  const allUrls = data.split("\n").filter((url) => url.length > 0);
-  const urls = [...new Set(allUrls)];
-
-  return urls;
-};
+import { getEndpointUrls } from "./urlSource.js";
 
 /**
  * Creates a LDES client instance for the given URL
@@ -106,11 +88,12 @@ const retrieveMermaidPreviewLink = async (url) => {
 
 export default {
   async load() {
-    const urls = await getEndpointUrls();
+    const endpoints = await getEndpointUrls();
     // create objects with information we need for the dashboard
-    const items = urls.map((url) => {
+    const items = endpoints.map((endpoint) => {
       return {
-        url,
+        url: endpoint.url,
+        title: endpoint.title,
         status: "unknown",
         error: null,
         mermaidUrl: null,
