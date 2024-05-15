@@ -30,9 +30,11 @@ for (let ix = 0; ix < endpoints.length; ix++) {
 <div v-for="endpoint of endpoints">
     <article :class="{'custom-block': true, 'danger': endpoint.status === 'offline', 'info': endpoint.status !== 'offline'}">
         <a :href="endpoint.url" target="_blank">{{ endpoint.title }}</a>
+        <h3>Info</h3>
         <p><span>{{ endpoint.status === "offline" ? "⭕" : "✅" }}</span> {{ endpoint.status }}</p>
         <p v-if="endpoint.error">{{ endpoint.error }}</p>
         <a v-if="endpoint.metadata" :href="endpoint.metadata.mermaidUrl" target="_blank">🧜‍♀️ Shape topology </a>
+        <h3 v-if="endpoint.throughput">Throughput</h3>
         <table v-if="endpoint.throughput">
             <thead>
                 <tr>
