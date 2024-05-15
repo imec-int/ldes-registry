@@ -19,7 +19,6 @@ for (let ix = 0; ix < endpoints.length; ix++) {
     }
 
     const throughput = endpointsWithThroughput.filter(m => m.url === endpoints[ix].url)[0]
-    console.log(throughput)
     if (throughput && throughput.status === 'online') {
         endpoints[ix].throughput = throughput
     } else {
@@ -30,7 +29,7 @@ for (let ix = 0; ix < endpoints.length; ix++) {
 
 <div v-for="endpoint of endpoints">
     <article :class="{'custom-block': true, 'danger': endpoint.status === 'offline', 'info': endpoint.status !== 'offline'}">
-        <a :href="endpoint.url" target="_blank">{{ endpoint.url }}</a>
+        <a :href="endpoint.url" target="_blank">{{ endpoint.title }}</a>
         <p><span>{{ endpoint.status === "offline" ? "⭕" : "✅" }}</span> {{ endpoint.status }}</p>
         <p v-if="endpoint.error">{{ endpoint.error }}</p>
         <a v-if="endpoint.metadata" :href="endpoint.metadata.mermaidUrl" target="_blank">🧜‍♀️ Shape topology </a>
