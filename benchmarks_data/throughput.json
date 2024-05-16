@@ -119,5 +119,104 @@
     "durationSec": 0,
     "throughputQuands": 0,
     "throughputMembers": 0
+  },
+  {
+    "url": "https://apidg.gent.be/opendata/adlib2eventstream/v1/adlib/personen",
+    "title": "People mentioned in cultural heritage objects in Ghent",
+    "status": "online",
+    "error": null,
+    "quads": 10046,
+    "members": 856,
+    "durationSec": 12.129384116999999,
+    "throughputQuands": 828.2,
+    "throughputMembers": 70.6
+  },
+  {
+    "url": "https://apidg.gent.be/opendata/adlib2eventstream/v1/adlib/thesaurus",
+    "title": "Thesaurus of the collection of Ghent",
+    "status": "online",
+    "error": null,
+    "quads": 14440,
+    "members": 1018,
+    "durationSec": 10.850822568,
+    "throughputQuands": 1330.8,
+    "throughputMembers": 93.8
+  },
+  {
+    "url": "https://apidg.gent.be/opendata/adlib2eventstream/v1/archiefgent/objecten",
+    "title": "Objects in the Ghent Archive",
+    "status": "online",
+    "error": null,
+    "quads": 24,
+    "members": 1,
+    "durationSec": 58.159587507999994,
+    "throughputQuands": 0.4,
+    "throughputMembers": 0
+  },
+  {
+    "url": "https://apidg.gent.be/opendata/adlib2eventstream/v1/dmg/tentoonstellingen",
+    "title": "Exhibitions in the Ghent Design Museum",
+    "status": "online",
+    "error": null,
+    "quads": 139,
+    "members": 1,
+    "durationSec": 48.362251039,
+    "throughputQuands": 2.9,
+    "throughputMembers": 0
+  },
+  {
+    "url": "https://apidg.gent.be/opendata/adlib2eventstream/v1/dmg/archief",
+    "title": "Archive of the Ghent Design Museum",
+    "status": "online",
+    "error": null,
+    "quads": 19,
+    "members": 1,
+    "durationSec": 630.0026493649999,
+    "throughputQuands": 0,
+    "throughputMembers": 0
+  },
+  {
+    "url": "https://apidg.gent.be/opendata/adlib2eventstream/v1/dmg/objecten",
+    "title": "Objects of the Ghent Design Museum",
+    "status": "online",
+    "error": null,
+    "quads": 31,
+    "members": 1,
+    "durationSec": 102.663845554,
+    "throughputQuands": 0.3,
+    "throughputMembers": 0
+  },
+  {
+    "url": "https://apidg.gent.be/opendata/adlib2eventstream/v1/hva/objecten",
+    "title": "Objects of Ghent’s Huis Van Alijn museum",
+    "status": "online",
+    "error": null,
+    "quads": 26,
+    "members": 1,
+    "durationSec": 53.344467897,
+    "throughputQuands": 0.5,
+    "throughputMembers": 0
+  },
+  {
+    "url": "https://apidg.gent.be/opendata/adlib2eventstream/v1/industriemuseum/objecten",
+    "title": "Objects of Ghent’s Museum of Industry",
+    "status": "online",
+    "error": null,
+    "quads": 31,
+    "members": 1,
+    "durationSec": 14.560296851999999,
+    "throughputQuands": 2.1,
+    "throughputMembers": 0.1
+  },
+  {
+    "url": "https://apidg.gent.be/opendata/adlib2eventstream/v1/stam/objecten",
+    "title": "Objects of Ghent’s STAM museum",
+    "status": "online",
+    "error": null,
+    "quads": 28,
+    "members": 1,
+    "durationSec": 53.64305938,
+    "throughputQuands": 0.5,
+    "throughputMembers": 0
   }
 ]
