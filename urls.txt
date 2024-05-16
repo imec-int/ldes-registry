@@ -9,3 +9,12 @@ https://apim-iow-apimanagement.azure-api.net/ldes/water-quality-observations-by-
 https://apim-iow-apimanagement.azure-api.net/ldes/devices-by-time,Internet of Water devices
 https://graph.irail.be/sncb/connections/feed,Train delays in Belgium
 https://marineregions.org/feed.ttl,The Marine Regions Gazetteer
+https://apidg.gent.be/opendata/adlib2eventstream/v1/adlib/personen,People mentioned in cultural heritage objects in Ghent
+https://apidg.gent.be/opendata/adlib2eventstream/v1/adlib/thesaurus,Thesaurus of the collection of Ghent
+https://apidg.gent.be/opendata/adlib2eventstream/v1/archiefgent/objecten,Objects in the Ghent Archive
+https://apidg.gent.be/opendata/adlib2eventstream/v1/dmg/tentoonstellingen,Exhibitions in the Ghent Design Museum
+https://apidg.gent.be/opendata/adlib2eventstream/v1/dmg/archief,Archive of the Ghent Design Museum
+https://apidg.gent.be/opendata/adlib2eventstream/v1/dmg/objecten,Objects of the Ghent Design Museum
+https://apidg.gent.be/opendata/adlib2eventstream/v1/hva/objecten,Objects of Ghent’s Huis Van Alijn museum
+https://apidg.gent.be/opendata/adlib2eventstream/v1/industriemuseum/objecten,Objects of Ghent’s Museum of Industry
+https://apidg.gent.be/opendata/adlib2eventstream/v1/stam/objecten,Objects of Ghent’s STAM museum
