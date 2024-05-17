@@ -18,6 +18,11 @@ for (let ix = 0; ix < endpoints.length; ix++) {
         endpoints[ix].metadata = null
     }
 
+    if (endpoints[ix].status === 'offline') {
+        // do not attach throughput data to offline endpoints
+        continue
+    }
+    
     const throughput = endpointsWithThroughput.filter(m => m.url === endpoints[ix].url)[0]
     if (throughput && throughput.status === 'online') {
         endpoints[ix].throughput = throughput
