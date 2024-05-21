@@ -4,88 +4,88 @@
     "title": "Geomobility LDES for traffic counts in Bruges",
     "status": "online",
     "error": null,
-    "quads": 114513,
-    "members": 6027,
-    "durationSec": 11.236590317000001,
-    "throughputQuands": 10191.1,
-    "throughputMembers": 536.4
+    "quads": 165262,
+    "members": 8698,
+    "durationSec": 12.859354216,
+    "throughputQuands": 12851.5,
+    "throughputMembers": 676.4
   },
   {
     "url": "https://www.pieter.pm/dcat/sweden/feed.ttl",
     "title": "A feed for the national data catalog of Sweden",
     "status": "online",
     "error": null,
-    "quads": 1469371,
-    "members": 74592,
-    "durationSec": 11.881982631000001,
-    "throughputQuands": 123663.8,
-    "throughputMembers": 6277.7
+    "quads": 647482,
+    "members": 35056,
+    "durationSec": 10.873709341,
+    "throughputQuands": 59545.6,
+    "throughputMembers": 3223.9
   },
   {
     "url": "https://era.ilabt.imec.be/rinf/ldes",
     "title": "The European railway infrastructure registry",
     "status": "online",
     "error": null,
-    "quads": 1065916,
-    "members": 55504,
-    "durationSec": 10.159813862,
-    "throughputQuands": 104914.9,
-    "throughputMembers": 5463.1
+    "quads": 1155631,
+    "members": 64987,
+    "durationSec": 11.393866642999999,
+    "throughputQuands": 101425.7,
+    "throughputMembers": 5703.7
   },
   {
     "url": "https://telraam-api.net/ldes/observations/by-page",
     "title": "Traffic Counts from the We Count project",
     "status": "online",
     "error": null,
-    "quads": 89057,
-    "members": 5001,
-    "durationSec": 10.967102648000001,
-    "throughputQuands": 8120.4,
-    "throughputMembers": 456
+    "quads": 240426,
+    "members": 13501,
+    "durationSec": 10.975447286000001,
+    "throughputQuands": 21905.8,
+    "throughputMembers": 1230.1
   },
   {
     "url": "https://private-api.gipod.vlaanderen.be/api/v1/ldes/mobility-hindrances",
     "title": "Mobility Hindrances in Flanders",
     "status": "online",
     "error": null,
-    "quads": 48068,
-    "members": 2001,
-    "durationSec": 10.228931519,
-    "throughputQuands": 4699.2,
-    "throughputMembers": 195.6
+    "quads": 72068,
+    "members": 3001,
+    "durationSec": 12.966681586999998,
+    "throughputQuands": 5557.9,
+    "throughputMembers": 231.4
   },
   {
     "url": "https://waterkwaliteit-brugge-ldes.kindflower-25e41809.westeurope.azurecontainerapps.io/Waterkwaliteit",
     "title": "Water Quality in Bruges",
     "status": "online",
     "error": null,
-    "quads": 25671,
-    "members": 1401,
-    "durationSec": 10.048946843,
-    "throughputQuands": 2554.6,
-    "throughputMembers": 139.4
+    "quads": 31199,
+    "members": 1701,
+    "durationSec": 11.509997778,
+    "throughputQuands": 2710.6,
+    "throughputMembers": 147.8
   },
   {
     "url": "https://apim-iow-apimanagement.azure-api.net/ldes/device-models-by-time",
     "title": "Internet of Water device models",
     "status": "online",
     "error": null,
-    "quads": 139,
+    "quads": 145,
     "members": 7,
-    "durationSec": 0.138527794,
-    "throughputQuands": 1003.4,
-    "throughputMembers": 50.5
+    "durationSec": 0.177149581,
+    "throughputQuands": 818.5,
+    "throughputMembers": 39.5
   },
   {
     "url": "https://apim-iow-apimanagement.azure-api.net/ldes/water-quality-observations-by-time",
     "title": "Internet of Water quality observations",
     "status": "online",
     "error": null,
-    "quads": 65078,
-    "members": 5006,
-    "durationSec": 10.01727651,
-    "throughputQuands": 6496.6,
-    "throughputMembers": 499.7
+    "quads": 55328,
+    "members": 4256,
+    "durationSec": 10.998414599,
+    "throughputQuands": 5030.5,
+    "throughputMembers": 387
   },
   {
     "url": "https://apim-iow-apimanagement.azure-api.net/ldes/devices-by-time",
@@ -105,9 +105,9 @@
     "error": null,
     "quads": 4214,
     "members": 301,
-    "durationSec": 11.612786005,
-    "throughputQuands": 362.9,
-    "throughputMembers": 25.9
+    "durationSec": 13.761422378999999,
+    "throughputQuands": 306.2,
+    "throughputMembers": 21.9
   },
   {
     "url": "https://marineregions.org/feed.ttl",
@@ -125,42 +125,42 @@
     "title": "People mentioned in cultural heritage objects in Ghent",
     "status": "online",
     "error": null,
-    "quads": 21387,
-    "members": 1857,
-    "durationSec": 12.296483523000001,
-    "throughputQuands": 1739.3,
-    "throughputMembers": 151
+    "quads": 30821,
+    "members": 2857,
+    "durationSec": 12.42068704,
+    "throughputQuands": 2481.4,
+    "throughputMembers": 230
   },
   {
     "url": "https://apidg.gent.be/opendata/adlib2eventstream/v1/adlib/thesaurus",
     "title": "Thesaurus of the collection of Ghent",
     "status": "online",
     "error": null,
-    "quads": 23942,
-    "members": 2018,
-    "durationSec": 10.766894070000001,
-    "throughputQuands": 2223.7,
-    "throughputMembers": 187.4
+    "quads": 31962,
+    "members": 3018,
+    "durationSec": 11.718975271,
+    "throughputQuands": 2727.4,
+    "throughputMembers": 257.5
   },
   {
     "url": "https://apidg.gent.be/opendata/adlib2eventstream/v1/archiefgent/objecten",
     "title": "Objects in the Ghent Archive",
     "status": "online",
     "error": null,
-    "quads": 24,
-    "members": 1,
-    "durationSec": 18.571386802,
-    "throughputQuands": 1.3,
-    "throughputMembers": 0.1
+    "quads": 11257,
+    "members": 483,
+    "durationSec": 30.20079609,
+    "throughputQuands": 372.7,
+    "throughputMembers": 16
   },
   {
     "url": "https://apidg.gent.be/opendata/adlib2eventstream/v1/dmg/tentoonstellingen",
     "title": "Exhibitions in the Ghent Design Museum",
     "status": "online",
     "error": null,
-    "quads": 139,
-    "members": 1,
-    "durationSec": 15.902922392,
+    "quads": 2223,
+    "members": 18,
+    "durationSec": 254.725208091,
     "throughputQuands": 8.7,
     "throughputMembers": 0.1
   },
@@ -171,52 +171,52 @@
     "error": null,
     "quads": 760,
     "members": 40,
-    "durationSec": 2.686497989,
-    "throughputQuands": 282.9,
-    "throughputMembers": 14.9
+    "durationSec": 2.153103783,
+    "throughputQuands": 353,
+    "throughputMembers": 18.6
   },
   {
     "url": "https://apidg.gent.be/opendata/adlib2eventstream/v1/dmg/objecten",
     "title": "Objects of the Ghent Design Museum",
     "status": "online",
     "error": null,
-    "quads": 31,
-    "members": 1,
-    "durationSec": 34.147952589,
-    "throughputQuands": 0.9,
-    "throughputMembers": 0
+    "quads": 7373,
+    "members": 244,
+    "durationSec": 50.023724566999995,
+    "throughputQuands": 147.4,
+    "throughputMembers": 4.9
   },
   {
     "url": "https://apidg.gent.be/opendata/adlib2eventstream/v1/hva/objecten",
     "title": "Objects of Ghent’s Huis Van Alijn museum",
     "status": "online",
     "error": null,
-    "quads": 8990,
-    "members": 334,
-    "durationSec": 10.381495538,
-    "throughputQuands": 866,
-    "throughputMembers": 32.2
+    "quads": 21344,
+    "members": 834,
+    "durationSec": 15.344643002000002,
+    "throughputQuands": 1391,
+    "throughputMembers": 54.4
   },
   {
     "url": "https://apidg.gent.be/opendata/adlib2eventstream/v1/industriemuseum/objecten",
     "title": "Objects of Ghent’s Museum of Industry",
     "status": "online",
     "error": null,
-    "quads": 2291,
-    "members": 80,
-    "durationSec": 12.372098355,
-    "throughputQuands": 185.2,
-    "throughputMembers": 6.5
+    "quads": 9675,
+    "members": 330,
+    "durationSec": 17.846445132,
+    "throughputQuands": 542.1,
+    "throughputMembers": 18.5
   },
   {
     "url": "https://apidg.gent.be/opendata/adlib2eventstream/v1/stam/objecten",
     "title": "Objects of Ghent’s STAM museum",
     "status": "online",
     "error": null,
-    "quads": 28,
-    "members": 1,
-    "durationSec": 17.212110086,
-    "throughputQuands": 1.6,
-    "throughputMembers": 0.1
+    "quads": 13278,
+    "members": 475,
+    "durationSec": 32.887560269,
+    "throughputQuands": 403.7,
+    "throughputMembers": 14.4
   }
 ]
