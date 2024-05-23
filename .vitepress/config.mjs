@@ -18,6 +18,6 @@ export default defineConfig({
       { icon: "github", link: "https://github.com/imec-int/ldes-registry" },
     ],
 
-    lastUpdated: true,
+    lastUpdated: false,
   },
 });

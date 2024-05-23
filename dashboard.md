@@ -6,6 +6,7 @@ outline: deep
 import { data as uptimeData } from './uptime.data.js'
 import { data as metaData } from './metadata.data.js'
 import { data as benchData } from './throughput.data.js'
+const moment = uptimeData.moment
 const endpoints = uptimeData.endpoints
 const endpointsWithMetadata = metaData.endpoints
 const endpointsWithThroughput = benchData.endpoints
@@ -82,3 +83,7 @@ for (let ix = 0; ix < endpoints.length; ix++) {
         </details>
     </article>
 </div>
+
+::: info
+The measurements were last updated on :stopwatch: {{ moment.toLocaleString('en-GB', { timeZone: 'Europe/Brussels' }) }}
+:::

@@ -33,6 +33,7 @@ export default {
       }
     }
 
-    return { endpoints: items };
+    const moment = Date();
+    return { endpoints: items, moment };
   },
 };
