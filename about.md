@@ -1,8 +1,6 @@
 # About
 
-Endpoint availability is checked by making a GET request to the server and expecting a successfull request (200). If the request fails, the endpoint is marked as "offline".
-
-Throughput is measured by replaying a stream of LDES data and measuring the time it takes to process the stream. For each endpoint, we replicate as many members as possible within 10 seconds. The throughput is calculated as the number of quads or members processed per second.
+Endpoint metadata is reloaded at build time with the help of several data loaders. Please check the README for more information on how each metric is calculated.
 
 ## Adding a new endpoint
 
