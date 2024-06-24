@@ -9,6 +9,7 @@ https://apim-iow-apimanagement.azure-api.net/ldes/water-quality-observations-by-
 https://apim-iow-apimanagement.azure-api.net/ldes/devices-by-time,Internet of Water devices
 https://graph.irail.be/sncb/connections/feed,Train delays in Belgium
 https://marineregions.org/feed.ttl,The Marine Regions Gazetteer
+https://www.marinespecies.org/rest/feed/taxon,World Registry of Marine Speceies (WoRMS)
 https://apidg.gent.be/opendata/adlib2eventstream/v1/adlib/personen,People mentioned in cultural heritage objects in Ghent
 https://apidg.gent.be/opendata/adlib2eventstream/v1/adlib/thesaurus,Thesaurus of the collection of Ghent
 https://apidg.gent.be/opendata/adlib2eventstream/v1/archiefgent/objecten,Objects in the Ghent Archive
