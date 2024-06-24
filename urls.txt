@@ -19,3 +19,47 @@ https://apidg.gent.be/opendata/adlib2eventstream/v1/dmg/objecten,Objects of the 
 https://apidg.gent.be/opendata/adlib2eventstream/v1/hva/objecten,Objects of Ghent’s Huis Van Alijn museum
 https://apidg.gent.be/opendata/adlib2eventstream/v1/industriemuseum/objecten,Objects of Ghent’s Museum of Industry
 https://apidg.gent.be/opendata/adlib2eventstream/v1/stam/objecten,Objects of Ghent’s STAM museum
+https://vocab.nerc.ac.uk/ldes/C30/,Active vocabulary content governance authorities: Bodies responsible for the intellectual control of vocabularies served by the NDG/SeaDataNet vocabulary server
+https://vocab.nerc.ac.uk/ldes/C34/,Activity purpose categories: Terms used to specify why an activity was undertaken
+https://vocab.nerc.ac.uk/ldes/R20/,Argo GROUNDED flags: Codes to indicate the best estimate of whether the float touched the ground during a specific cycle
+https://vocab.nerc.ac.uk/ldes/R40/,Argo Principal Investigator (PI) names: List of Principal Investigator (PI) names in charge of Argo floats
+https://vocab.nerc.ac.uk/ldes/R19/,Argo STATUS flags: Flag scale for values in all Argo netCDF cycle timing variables
+https://vocab.nerc.ac.uk/ldes/R18/,Argo configuration parameter names: List of float configuration settings selected by the float Principal Investigator (PI). Configuration parameters may or may not be reported by the float, and do not constitute float measurements
+https://vocab.nerc.ac.uk/ldes/R28/,Argo controller board types and generations: List of Argo floats controller board types and generations
+https://vocab.nerc.ac.uk/ldes/R04/,Argo data centres and institutions: Codes for data centres and institutions handling or managing Argo data
+https://vocab.nerc.ac.uk/ldes/R06/,Argo data state indicators: Processing stage of the data based on the concatenation of processing level and class indicators
+https://vocab.nerc.ac.uk/ldes/R01/,Argo data type: Terms describing the type of data contained in an Argo netCDF file
+https://vocab.nerc.ac.uk/ldes/RD2/,Argo delayed-mode quality control measurement flags: Quality flag scale for delayed-mode measurements
+https://vocab.nerc.ac.uk/ldes/RTV/,Argo float cycle timing variables: Timing variables representing stages of an Argo float profiling cycle, most of which are associated with a trajectory measurement code ID listed in NVS collection 'R15'
+https://vocab.nerc.ac.uk/ldes/R07/,Argo history action codes: Coded history information for each action performed on each profile by a data centre
+https://vocab.nerc.ac.uk/ldes/R12/,Argo history processing step codes: Data processing step codes for history record
+https://vocab.nerc.ac.uk/ldes/R08/,Argo instrument types: Subset of instrument type codes from the World Meteorological Organization (WMO) Common Code Table C-3 (CCT C-3) 1770, named 'Instrument make and type for water temperature profile measurement with fall rate equation coefficients'
+https://vocab.nerc.ac.uk/ldes/RMC/,Argo measurement code categories: Categories of trajectory measurement codes listed in NVS collection 'R15'
+https://vocab.nerc.ac.uk/ldes/R13/,Argo ocean area codes and boundary definitions: Ocean area codes assigned to each profile in the Metadata directory (index) file of the Argo Global Assembly Centre
+https://vocab.nerc.ac.uk/ldes/R03/,Argo parameter codes: Terms describing individual measured phenomena, used to mark up sets of data in Argo netCDF arrays
+https://vocab.nerc.ac.uk/ldes/R22/,Argo platform family: List of platform family/category of Argo floats
+https://vocab.nerc.ac.uk/ldes/R24/,Argo platform maker: List of Argo float manufacturers
+https://vocab.nerc.ac.uk/ldes/R23/,Argo platform type: List of Argo float types
+https://vocab.nerc.ac.uk/ldes/R05/,Argo position accuracy: Accuracy in latitude and longitude measurements received from the positioning system, grouped by location accuracy classes
+https://vocab.nerc.ac.uk/ldes/R09/,Argo positioning system: List of float location measuring systems
+https://vocab.nerc.ac.uk/ldes/RP2/,Argo profile quality control flags: Quality control flag scale for whole profiles
+https://vocab.nerc.ac.uk/ldes/RR2/,Argo real-time quality control measurement flags: Quality flag scale for real-time measurements
+https://vocab.nerc.ac.uk/ldes/R11/,Argo real-time quality-control test identifiers: List of real-time quality-control tests and corresponding binary identifiers, used as reference to populate the Argo net
+https://vocab.nerc.ac.uk/ldes/R26/,Argo sensor manufacturers: Terms describing developers and manufacturers of sensors mounted on Argo floats
+https://vocab.nerc.ac.uk/ldes/R27/,Argo sensor models: Terms listing models of sensors mounted on Argo floats. Note: avoid using the manufacturer name and sensor firmware version in new entries when possible
+https://vocab.nerc.ac.uk/ldes/R25/,Argo sensor types: Terms describing sensor types mounted on Argo floats
+https://vocab.nerc.ac.uk/ldes/R21/,Argo status flag on the Representative Park Pressure (RPP): Argo status flag on the Representative Park Pressure (RPP)
+https://vocab.nerc.ac.uk/ldes/R14/,Argo technical parameter names: List of technical parameters reported by a float at every cycle
+https://vocab.nerc.ac.uk/ldes/R15/,Argo trajectory measurement code identifiers: Measurement code IDs used in Argo Trajectory netCDF files
+https://vocab.nerc.ac.uk/ldes/R10/,Argo transmission systems: List of telecommunication systems
+https://vocab.nerc.ac.uk/ldes/R16/,Argo vertical sampling schemes: Profile sampling schemes and sampling methods
+https://vocab.nerc.ac.uk/ldes/A05/,AtlantOS Essential Variables: Collection of terms used to group key measurements into a set of Essential Variables (EV) and their associated units as part of the AtlantOS Atlantic Ocean datase
+https://vocab.nerc.ac.uk/ldes/GXM/,BODC I18n term usage: The purpose, such as an application, for which a given BODC I18n term in the GBX controlled vocabulary is used
+https://vocab.nerc.ac.uk/ldes/C75/,BODC Organisation Histories: Concepts used to populate 'organisation' fields in BODC metadata schemas
+https://vocab.nerc.ac.uk/ldes/B75/,BODC Organisations: Up-to-date names and addresses for organisational entities referenced in BODC systems
+https://vocab.nerc.ac.uk/ldes/P01/,BODC Parameter Usage Vocabulary: Terms built using the BODC (British Oceanographic Data Center) parameter semantic model designed to describe individual measured phenomena
+https://vocab.nerc.ac.uk/ldes/B76/,BODC Platform Models: Terms used to describe designs or versions of platforms
+https://vocab.nerc.ac.uk/ldes/C00/,BODC Seafloor Depth Data Sources: Terms used to describe the provenance of a water depth included in BODC metadata
+https://vocab.nerc.ac.uk/ldes/B11/,BODC Standard Operating Procedures and Protocols for environmental observations: Procedures or protocols that have been adopted by communities to ensure consistent and comparable methods are used when making observations from the environment
+https://vocab.nerc.ac.uk/ldes/C62/,BODC administrative region names: Labels used by BODC to populate 'county' metadata fields
+https://vocab.nerc.ac.uk/ldes/C88/,BODC asset access right roles: Terms used by BODC to describe roles specifying access rights to assets, which include data objects, web pages, services and vocabulary lists
