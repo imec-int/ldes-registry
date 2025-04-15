@@ -63,3 +63,5 @@ https://vocab.nerc.ac.uk/ldes/C00/,BODC Seafloor Depth Data Sources: Terms used 
 https://vocab.nerc.ac.uk/ldes/B11/,BODC Standard Operating Procedures and Protocols for environmental observations: Procedures or protocols that have been adopted by communities to ensure consistent and comparable methods are used when making observations from the environment
 https://vocab.nerc.ac.uk/ldes/C62/,BODC administrative region names: Labels used by BODC to populate 'county' metadata fields
 https://vocab.nerc.ac.uk/ldes/C88/,BODC asset access right roles: Terms used by BODC to describe roles specifying access rights to assets, which include data objects, web pages, services and vocabulary lists
+https://edmo.seadatanet.org/ldes/feed,European Directory of Marine Organisations
+https://edmerp.seadatanet.org/ldes/feed,European Directory of Evironmenal Research Projects
