@@ -19,6 +19,8 @@ https://apidg.gent.be/opendata/adlib2eventstream/v1/dmg/objecten,Objects of the 
 https://apidg.gent.be/opendata/adlib2eventstream/v1/hva/objecten,Objects of Ghent’s Huis Van Alijn museum
 https://apidg.gent.be/opendata/adlib2eventstream/v1/industriemuseum/objecten,Objects of Ghent’s Museum of Industry
 https://apidg.gent.be/opendata/adlib2eventstream/v1/stam/objecten,Objects of Ghent’s STAM museum
+https://edmo.seadatanet.org/ldes/feed,European Directory of Marine Organisations
+https://edmerp.seadatanet.org/ldes/feed,European Directory of Evironmenal Research Projects
 http://vocab.nerc.ac.uk/ldes/A01/,"International Coastal Atlas Network Coastal Erosion Global Thesaurus"
 http://vocab.nerc.ac.uk/ldes/A02/,"Oregon Coastal Atlas Coastal Erosion Thesaurus markup terms"
 http://vocab.nerc.ac.uk/ldes/A03/,"Oregon Coastal Atlas Coastal Erosion Thesaurus discovery terms"
