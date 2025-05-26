@@ -1,5 +1,5 @@
 // @ts-check
-const { exec } = require("child_process");
+import { exec } from "child_process";
 import throughput from "./benchmark_throughput.js";
 
 function gitCommitAndPush(message) {

@@ -1,6 +1,5 @@
-// @ts-check
-const { intoConfig, replicateLDES } = require("ldes-client");
-const fs = require("fs");
+import { intoConfig, replicateLDES } from "ldes-client";
+import fs from "fs";
 import { getEndpointUrls } from "./urlSource.js";
 
 /**
@@ -26,7 +25,7 @@ const createClient = (url) => {
  * @param {number} maxDurationSeconds - Optionally, the maximum amount of time in seconds to consume members from the stream.
  * @returns {Promise<Object>} - Returns an object including the `url`, `quads`, `members` and `durationSec`
  */
-const replicateStrem = async (url, maxMembers, maxDurationSeconds) => {
+const replicateStream = async (url, maxMembers, maxDurationSeconds) => {
   console.log("Replicating stream from", url);
   try {
     const client = createClient(url);
@@ -75,7 +74,6 @@ const replicateStrem = async (url, maxMembers, maxDurationSeconds) => {
       durationSec: Number(end - start) / 1e6 / 1000,
     };
   } catch (error) {
-    console.log(error);
     return null;
   }
 };
@@ -118,13 +116,13 @@ export default {
         const response = await fetch(url, { method: "GET" });
         if (response.ok) {
           // benchmark the stream for 10 seconds, to give servers the chance to cache the results
-          await replicateStrem(url, 0, 10);
+          await replicateStream(url, 0, 10);
 
-          // sleep for 1 minute to avoid throttling
-          await new Promise((resolve) => setTimeout(resolve, 60000));
+          // sleep for 10 seconds to avoid throttling
+          await new Promise((resolve) => setTimeout(resolve, 10000));
 
           // benchmark the stream for 10 seconds to get the actual results
-          const result = await replicateStrem(url, 0, 10);
+          const result = await replicateStream(url, 0, 10);
           if (!result) {
             items[ix].status = "offline";
             items[ix].error = "Failed to replicate stream.";
