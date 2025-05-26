@@ -1,5 +1,3 @@
-// @ts-check
-
 import { getEndpointUrls } from "./urlSource";
 
 export default {

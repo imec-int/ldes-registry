@@ -1,6 +1,6 @@
-const { intoConfig, replicateLDES } = require("ldes-client");
-import { deflate, inflate } from "pako";
-import { toUint8Array, fromUint8Array, toBase64, fromBase64 } from "js-base64";
+import { intoConfig, replicateLDES } from "ldes-client";
+import { deflate } from "pako";
+import { fromUint8Array } from "js-base64";
 import { getEndpointUrls } from "./urlSource.js";
 
 /**
@@ -37,13 +37,20 @@ const convertMermaidToState = (state) => {
  * Calculates a link to the Mermaid preview of the LDES shapes at the given URL.
  */
 const retrieveMermaidPreviewLink = async (url) => {
+  console.log("---------------------------------------------------------");
   console.log("Calculating mermaid shape preview", url);
+
+  let mermaidUrl = null;
+  let gotDescription = false;
+  let warning = undefined;
   try {
     const client = createClient(url);
 
-    let mermaidUrl = null;
     client.on("description", (info) => {
-      if (info.extractor.shapesGraph) {
+      gotDescription = true;
+      const shapesGraph = info.extractor.shapesGraph;
+      if (shapesGraph &&
+        (shapesGraph.shapes.namedNodes.size > 0 || shapesGraph.shapes.blankNodes.size > 0)) {
         try {
           const mermaidMarkup = info.extractor.shapesGraph.toMermaid(
             info.shape
@@ -51,7 +58,7 @@ const retrieveMermaidPreviewLink = async (url) => {
           const state = convertMermaidToState(mermaidMarkup);
           mermaidUrl = `https://mermaid.live/view#pako:${state}`;
         } catch (ex) {
-          console.log("Failed to extract mermaid");
+          warning = `Failed to convert shapes to mermaid. Reason: \n${ex.message} ${ex.cause}`;
         }
       } else {
         console.log("No mermaid extracted");
@@ -79,10 +86,21 @@ const retrieveMermaidPreviewLink = async (url) => {
     return {
       url,
       mermaidUrl,
+      warning,
     };
   } catch (error) {
-    console.log(error);
-    return null;
+    if (gotDescription) {
+      return {
+        url,
+        mermaidUrl,
+        warning: `LDES is online but an issue was encountered while traversing it: \n${error.message} ${error.cause}`,
+      };
+    } else {
+      return {
+        url,
+        error: `Failed to fetch LDES feed. Reason: \n${error.message} ${error.cause}`,
+      }
+    }
   }
 };
 
@@ -96,29 +114,34 @@ export default {
         title: endpoint.title,
         status: "unknown",
         error: null,
+        warning: null,
         mermaidUrl: null,
       };
     });
 
     for (let ix = 0; ix < items.length; ix++) {
       const url = items[ix].url;
-      try {
-        const result = await retrieveMermaidPreviewLink(url);
-        if (!result) {
-          items[ix].status = "offline";
-          items[ix].error = "Failed to replicate stream.";
-          continue;
-        }
+      const result = await retrieveMermaidPreviewLink(url);
+      console.log(`result for ${url}`, result);
+      if (result.error) {
+        items[ix].status = "offline";
+        items[ix].error = result.error;
+        continue;
+      } else if (result.warning) {
         const item = items[ix];
         items[ix] = {
           ...item,
           ...result,
-          status: "online",
+          status: "warning",
         };
-      } catch (error) {
-        items[ix].status = "offline";
-        items[ix].error = `${error.cause} ${error.message}`;
+        continue;
       }
+      const item = items[ix];
+      items[ix] = {
+        ...item,
+        ...result,
+        status: "online",
+      };
     }
 
     return { endpoints: items };

@@ -8,20 +8,26 @@ import { data as metaData } from './metadata.data.js'
 import { data as benchData } from './throughput.data.js'
 const moment = uptimeData.moment
 const endpoints = uptimeData.endpoints
-const endpointsWithMetadata = metaData.endpoints
+//const endpointsWithMetadata = [];
+const endpointsWithMetadata = metaData.endpoints;
 const endpointsWithThroughput = benchData.endpoints
 
 for (let ix = 0; ix < endpoints.length; ix++) {
     const metadata = endpointsWithMetadata.filter(m => m.url === endpoints[ix].url)[0]
-    if (metadata && metadata.status === 'online' && metadata.mermaidUrl && metadata.mermaidUrl.length > 0) {
-        endpoints[ix].metadata = metadata
-    } else {
-        endpoints[ix].metadata = null
-    }
-
     if (endpoints[ix].status === 'offline') {
         // do not attach throughput data to offline endpoints
         continue
+    }
+
+    if (metadata && metadata.status === 'warning') {
+        endpoints[ix].status = 'warning';
+        endpoints[ix].warning = metadata.warning;
+    }
+    
+    if (metadata && metadata.mermaidUrl && metadata.mermaidUrl.length > 0) {
+        endpoints[ix].metadata = metadata
+    } else {
+        endpoints[ix].metadata = null
     }
     
     const throughput = endpointsWithThroughput.filter(m => m.url === endpoints[ix].url)[0]
@@ -31,16 +37,24 @@ for (let ix = 0; ix < endpoints.length; ix++) {
         endpoints[ix].throughput = null
     }
 }
+// sort the items by status (online first, then warning and offline last)
+endpoints.sort((a, b) => {
+    if (a.status === 'offline' && b.status === 'warning') return 1;
+    if (a.status === 'online' && b.status !== 'online') return -1;
+    if (a.status !== 'online' && b.status === 'online') return 1;
+    return 0;
+});
 </script>
 
 <div v-for="endpoint of endpoints">
-    <article :class="{'custom-block': true, 'danger': endpoint.status === 'offline', 'info': endpoint.status !== 'offline'}">
+    <article :class="{'custom-block': true, 'danger': endpoint.status === 'offline', 'warning': endpoint.status === 'warning', 'info': endpoint.status === 'online'}">
         <h2 style="margin-top: 0; border-top: 0;">{{ endpoint.title }}</h2>
         <h3>Info</h3>
-        <p><span>{{ endpoint.status === "offline" ? "⭕" : "✅" }}</span> Status {{ endpoint.status }}</p>
+        <p><span>{{ endpoint.status === "offline" ? "⭕" : endpoint.status === "warning" ? "⚠️" : "✅" }}</span> Status {{ endpoint.status }}</p>
         <p><span>🔗</span> <a :href="endpoint.url" target="_blank">{{ endpoint.url }}</a></p>
         <p v-if="endpoint.error">{{ endpoint.error }}</p>
         <p v-if="endpoint.metadata"><span>🧜‍♀️</span> <a :href="endpoint.metadata.mermaidUrl" target="_blank">Shape topology </a></p>
+        <p v-if="endpoint.warning">{{ endpoint.warning }}</p>
         <h3 v-if="endpoint.throughput">Throughput</h3>
         <table v-if="endpoint.throughput">
             <thead>
