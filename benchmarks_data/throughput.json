@@ -143,6 +143,17 @@
     "throughputMembers": 102.4
   },
   {
+    "url": "http://193.190.127.143:8080/marine-regions-mirror/ldes",
+    "title": "Marine Regions mirror LDES hosted by imec",
+    "status": "online",
+    "error": null,
+    "quads": 414404,
+    "members": 31268,
+    "durationSec": 10.009238169,
+    "throughputQuands": 41402.2,
+    "throughputMembers": 3123.9
+  },
+  {
     "url": "https://apidg.gent.be/opendata/adlib2eventstream/v1/adlib/personen",
     "title": "People mentioned in cultural heritage objects in Ghent",
     "status": "online",
