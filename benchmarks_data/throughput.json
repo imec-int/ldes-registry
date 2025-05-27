@@ -13,13 +13,13 @@
   {
     "url": "https://www.pieter.pm/dcat/sweden/feed.ttl",
     "title": "A feed for the national data catalog of Sweden",
-    "status": "offline",
-    "error": "Failed to replicate stream.",
-    "quads": 0,
-    "members": 0,
-    "durationSec": 0,
-    "throughputQuands": 0,
-    "throughputMembers": 0
+    "status": "online",
+    "error": null,
+    "quads": 32063,
+    "members": 1191,
+    "durationSec": 11.50785188,
+    "throughputQuands": 2786.2,
+    "throughputMembers": 103.5
   },
   {
     "url": "https://era.ilabt.imec.be/rinf/ldes",
@@ -125,33 +125,33 @@
     "title": "The Marine Regions Gazetteer",
     "status": "online",
     "error": null,
-    "quads": 7774,
-    "members": 181,
-    "durationSec": 10.671517521,
-    "throughputQuands": 728.5,
-    "throughputMembers": 17
+    "quads": 4891,
+    "members": 147,
+    "durationSec": 10.049536613,
+    "throughputQuands": 486.7,
+    "throughputMembers": 14.6
   },
   {
     "url": "https://aphia.org/feed",
     "title": "World Registry of Marine Speceies (WoRMS)",
     "status": "online",
     "error": null,
-    "quads": 27594,
-    "members": 1027,
-    "durationSec": 10.030878431,
-    "throughputQuands": 2750.9,
-    "throughputMembers": 102.4
+    "quads": 10554,
+    "members": 391,
+    "durationSec": 10.160790407,
+    "throughputQuands": 1038.7,
+    "throughputMembers": 38.5
   },
   {
     "url": "http://193.190.127.143:8080/marine-regions-mirror/ldes",
     "title": "Marine Regions mirror LDES hosted by imec",
     "status": "online",
     "error": null,
-    "quads": 414404,
-    "members": 31268,
-    "durationSec": 10.009238169,
-    "throughputQuands": 41402.2,
-    "throughputMembers": 3123.9
+    "quads": 395827,
+    "members": 31948,
+    "durationSec": 10.119652980000001,
+    "throughputQuands": 39114.7,
+    "throughputMembers": 3157
   },
   {
     "url": "https://apidg.gent.be/opendata/adlib2eventstream/v1/adlib/personen",
