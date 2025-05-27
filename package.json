@@ -4,9 +4,12 @@
     "email": "konstantin@headbright.be",
     "url": "https://headbright.be"
   },
+  "contributors": [
+    "Julián Rojas"
+  ],
   "devDependencies": {
-    "ldes-client": "^0.0.9-pr.33.1",
-    "vitepress": "^1.0.0-rc.45"
+    "ldes-client": "^0.1.8",
+    "vitepress": "^1.6.3"
   },
   "scripts": {
     "docs:dev": "vitepress dev",
