@@ -11,6 +11,7 @@ https://apim-iow-apimanagement.azure-api.net/ldes/devices-by-time,Internet of Wa
 https://graph.irail.be/sncb/connections/feed,Train delays in Belgium
 https://marineregions.org/feed,The Marine Regions Gazetteer
 https://aphia.org/feed,World Registry of Marine Speceies (WoRMS)
+http://193.190.127.143:8080/marine-regions-mirror/ldes,Marine Regions mirror LDES hosted by imec
 https://apidg.gent.be/opendata/adlib2eventstream/v1/adlib/personen,People mentioned in cultural heritage objects in Ghent
 https://apidg.gent.be/opendata/adlib2eventstream/v1/adlib/thesaurus,Thesaurus of the collection of Ghent
 https://apidg.gent.be/opendata/adlib2eventstream/v1/archiefgent/objecten,Objects in the Ghent Archive
