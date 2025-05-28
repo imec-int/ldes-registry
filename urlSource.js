@@ -1,5 +1,7 @@
 // @ts-check
 
+import { readFile } from "fs/promises";
+
 /**
  * Downloads the list of LDES streams endpoints.
  * @returns {Promise<Array<{url: string, title: string}>>} The array of endpoint URLs with their titles.
@@ -10,6 +12,8 @@ export const getEndpointUrls = async () => {
   );
 
   const data = await response.text();
+  //const data = await readFile("./test.txt", { encoding: "utf-8" });
+
   return data
     .split("\n")
     .filter((url) => url.length > 0)
