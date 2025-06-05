@@ -1,5 +1,6 @@
 https://brugge-ldes.geomobility.eu/observations,Geomobility LDES for traffic counts in Bruges
 https://www.pieter.pm/dcat/sweden/feed.ttl,A feed for the national data catalog of Sweden
+https://rdf-connect.github.io/era-dcat-ap-feed/index.trig,A DCAT-AP feed for the EU Railway Agency's data assest 
 https://era.ilabt.imec.be/rinf/ldes,The European railway infrastructure registry
 https://igenservicedev.licquid.com/LPDC/v1/InstanceSnapshot?pageNumber=0,Feed of Local Decisions as Linked Open Data (LBLOD)
 https://telraam-api.net/ldes/observations,Traffic Counts from the We Count project
